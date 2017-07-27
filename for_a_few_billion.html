@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>For a few Billion</title>
+    <link rel="stylesheet" href="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+      //create function
+      function pennyForAPound(){
+        //set variable for amount
+        var amount = .01;
+        //set variable for days
+        var days = 1;
+        //loop through days, until we reach 30
+        for (days; days <= Infinity; days++) {
+          //double the amount
+          amount *= 2;
+          console.log(amount+'='+days);
+          if(amount >= Infinity){
+            break;
+          }
+        }
+        //print the amount
+        console.log(amount);
+
+      }
+        //invoke the function
+        pennyForAPound();
+
+
+
+
+
+
+
+
+    </script>
+
+  </head>
+  <body>
+
+  </body>
+</html>
