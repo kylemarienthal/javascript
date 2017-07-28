@@ -7,19 +7,21 @@
     <link rel="stylesheet" href="">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript">
-      // function objectWork(array){
-      //   for (var i = 0; i < array.length; i++) {
-      //     console.log(array[i].first_name + ' ' + array[i].last_name);
-      //   }
-      // }
-
-      var students = [
-       {first_name:  'Michael', last_name : 'Jordan'},
-       {first_name : 'John', last_name : 'Rosales'},
-       {first_name : 'Mark', last_name : 'Guillen'},
-       {first_name : 'KB', last_name : 'Tonel'}
-     ];
+    //   function objectWork(array){
+    //     for (var i = 0; i < array.length; i++) {
+    //       console.log(array[i].first_name + ' ' + array[i].last_name);
+    //     }
+    //   }
+     //
+    //   var students = [
+    //    {first_name:  'Michael', last_name : 'Jordan'},
+    //    {first_name : 'John', last_name : 'Rosales'},
+    //    {first_name : 'Mark', last_name : 'Guillen'},
+    //    {first_name : 'KB', last_name : 'Tonel'}
+    //  ];
     //  objectWork(students);
+
+    // ****************************BONUS*************************
     var users = {
      'Students': [
          {first_name:  'Michael', last_name : 'Jordan'},
@@ -32,10 +34,16 @@
          {first_name : 'Martin', last_name : 'Puryear'}
       ]
      }
-
+    //
+    console.log(key);
      function students_and_instructors(obj) {
        for(var key in obj){
-         console.log(key.value);
+         console.log(key);
+         var myArray = obj[key];
+         console.log(myArray , 'test');
+        //  for (var i = 0; i < array.length; i++) {
+        //    array[i]
+        //  }
        }
         //  console.log(key + ' aaa ' + obj[key]);
      }
