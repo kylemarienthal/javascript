@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Numbers Only</title>
+    <link rel="stylesheet" href="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+      // function objectWork(array){
+      //   for (var i = 0; i < array.length; i++) {
+      //     console.log(array[i].first_name + ' ' + array[i].last_name);
+      //   }
+      // }
+
+      var students = [
+       {first_name:  'Michael', last_name : 'Jordan'},
+       {first_name : 'John', last_name : 'Rosales'},
+       {first_name : 'Mark', last_name : 'Guillen'},
+       {first_name : 'KB', last_name : 'Tonel'}
+     ];
+    //  objectWork(students);
+    var users = {
+     'Students': [
+         {first_name:  'Michael', last_name : 'Jordan'},
+         {first_name : 'John', last_name : 'Rosales'},
+         {first_name : 'Mark', last_name : 'Guillen'},
+         {first_name : 'KB', last_name : 'Tonel'}
+      ],
+     'Instructors': [
+         {first_name : 'Michael', last_name : 'Choi'},
+         {first_name : 'Martin', last_name : 'Puryear'}
+      ]
+     }
+
+     function students_and_instructors(obj) {
+       for(var key in obj){
+         console.log(key.value);
+       }
+        //  console.log(key + ' aaa ' + obj[key]);
+     }
+     students_and_instructors(users);
+
+
+    </script>
+
+  </head>
+
+  <body>
+
+  </body>
+
+</html>
